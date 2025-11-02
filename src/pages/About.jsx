@@ -62,28 +62,28 @@ const About = () => {
   // Mock data for founders
   const founders = [
     {
-      name: "Lena H.",
+      name: "Lana",
       title: "Chief Designer",
       bio: "Lena manages the design studio and creative output. She brings over 15 years of experience in high-end residential and commercial architecture, specializing in sustainable, minimalist design principles.",
       imageRatio: "400x500",
       imageText: "Lena",
     },
     {
-      name: "Jack R.",
+      name: "Chad",
       title: "Head of Operations",
       bio: "Jack oversees project execution and logistics, ensuring every project is delivered on time and within budget. His background in construction management provides robust technical oversight.",
       imageRatio: "400x500",
       imageText: "Jack",
     },
     {
-      name: "Sarah V.",
+      name: "Lisa",
       title: "Lead Architect",
       bio: "Sarah is responsible for initial concept generation and client liaison. Her passion lies in integrating modern technology with traditional building methods to create unique spaces.",
       imageRatio: "400x500",
       imageText: "Sarah",
     },
     {
-      name: "Ken B.",
+      name: "Peter",
       title: "Financial Director",
       bio: "Ken handles all fiscal aspects of Halftone, from investment strategy to cost analysis. His expertise ensures the financial viability and long-term stability of the firm.",
       imageRatio: "400x500",
@@ -92,43 +92,9 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
-      {/* Top Navigation Bar (Consistent with previous pages) */}
-      <nav className="flex items-center justify-between px-6 sm:px-12 py-4 border-b border-gray-100">
-        <div className="flex items-center space-x-6">
-          <span className="text-sm font-light tracking-[0.3em] text-gray-900">
-            HALFTONE
-          </span>
-          <div className="hidden sm:flex items-center space-x-2 text-gray-500">
-            <Search className="w-4 h-4" />
-            <span className="text-xs">Search</span>
-          </div>
-        </div>
-        <div className="flex items-center space-x-6">
-          <a
-            href="#"
-            className="text-xs text-gray-700 hover:text-gray-900 hidden sm:block"
-          >
-            Work
-          </a>
-          <a
-            href="#"
-            className="text-xs text-gray-700 hover:text-gray-900 hidden sm:block"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="text-xs text-gray-700 hover:text-gray-900 hidden sm:block"
-          >
-            More
-          </a>
-          <Heart className="w-4 h-4 text-gray-500 cursor-pointer" />
-          <User className="w-4 h-4 text-gray-500 cursor-pointer" />
-          <MoreHorizontal className="w-4 h-4 text-gray-500 cursor-pointer" />
-        </div>
-      </nav>
-
+    // 1. REMOVED: <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased ">
+    // 2. REMOVED: <nav className="...">...</nav> (Navigation Bar)
+    <div className="bg-white text-gray-900">
       {/* 1. Bio Header Section */}
       <section className="container mx-auto max-w-6xl px-6 py-20 flex flex-col items-center sm:items-start sm:flex-row space-y-8 sm:space-y-0 sm:space-x-16">
         {/* Left Column (Text) */}
@@ -287,12 +253,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Footer Section (Consistent with previous pages) */}
-      <footer className="bg-white pt-10 pb-16 text-center text-xs text-gray-500 border-t border-gray-100">
-        <p className="mb-2">Find our work on Behance, etc.</p>
-        <p className="mb-2">info@halftone.com</p>
-        <p>© 2024 by Halftone, LLC.</p>
-      </footer>
+      {/* 3. REMOVED: Footer Section */}
+      {/* 4. REMOVED: Final closing </div> for the top-level wrapper */}
     </div>
   );
 };

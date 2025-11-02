@@ -32,42 +32,6 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 const HowItWorks = () => {
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
-      {/* Top Navigation Bar (Replicated from the first page's theme) */}
-      <nav className="flex items-center justify-between px-6 sm:px-12 py-4 border-b border-gray-100">
-        <div className="flex items-center space-x-6">
-          <span className="text-sm font-light tracking-[0.3em] text-gray-900">
-            HALFTONE
-          </span>
-          <div className="hidden sm:flex items-center space-x-2 text-gray-500">
-            <Search className="w-4 h-4" />
-            <span className="text-xs">Search</span>
-          </div>
-        </div>
-        <div className="flex items-center space-x-6">
-          <a
-            href="#"
-            className="text-xs text-gray-700 hover:text-gray-900 hidden sm:block"
-          >
-            Work
-          </a>
-          <a
-            href="#"
-            className="text-xs text-gray-700 hover:text-gray-900 hidden sm:block"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="text-xs text-gray-700 hover:text-gray-900 hidden sm:block"
-          >
-            More
-          </a>
-          <Heart className="w-4 h-4 text-gray-500 cursor-pointer" />
-          <User className="w-4 h-4 text-gray-500 cursor-pointer" />
-          <MoreHorizontal className="w-4 h-4 text-gray-500 cursor-pointer" />
-        </div>
-      </nav>
-
       {/* Main Page Title */}
       <section className="container mx-auto max-w-4xl px-6 py-16 text-center">
         <h1 className="text-4xl font-light tracking-wide text-gray-900 mb-4">

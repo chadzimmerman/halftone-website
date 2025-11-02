@@ -1,16 +1,49 @@
-# React + Vite
+# Halftone Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React + TailwindCSS project for Halftone LLC, a design-led real estate development company. The project is currently set up with a modern frontend using React, TailwindCSS for styling, and Vite as the build tool.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features Implemented So Far
 
-## React Compiler
+- **Responsive Homepage** (`Home.jsx`) with:
+  - Hero section
+  - GAKS feature section
+  - Project gallery grid
+  - Footer with decorative headers and contact links
+- **Other Pages** (currently static):
+  - HowItWorks
+  - About
+  - Contact
+  - PortfolioPage
+- **Styling**
+  - TailwindCSS fully installed and configured
+  - Custom fonts and responsive layout
+- **Icons**
+  - `lucide-react` icons integrated
+- **Routing**
+  - React Router or page navigation setup pending
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## To Do
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Portfolio Page**
+
+   - Make the Portfolio page dynamically load content based on user clicks
+   - Integrate the project images and descriptions dynamically
+
+2. **Content**
+
+   - Input all custom text, images, and company-specific information
+
+3. **Backend**
+
+   - Build a backend database (MySQL, PostgreSQL, or similar) to store portfolio data
+   - Set up API routes to fetch content for the frontend
+
+4. **Deployment**
+   - Upload the completed website to a public hosting platform (Vercel, Netlify, or similar)
+   - Configure domain, SSL, and production build settings
+
+---

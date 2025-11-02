@@ -41,17 +41,21 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 
 // Data structure for the GAKS section icons
 const GaksFeatures = [
-  { icon: Scale, label: "SCALE", description: "Design concept development" },
+  { icon: Scale, label: "DESIGN", description: "Design concept development" },
   {
     icon: Aperture,
-    label: "FOCUS",
-    description: "Project planning and execution",
+    label: "INTERIORS",
+    description: "Your ideal living space",
   },
-  { icon: Globe, label: "REACH", description: "International cooperation" },
+  {
+    icon: Globe,
+    label: "EXTERIORS",
+    description: "Residential and commercial real estate",
+  },
   {
     icon: MessageSquare,
-    label: "LISTEN",
-    description: "Client relationship management",
+    label: "ANIMATIONS",
+    description: "Next level motion graphics",
   },
 ];
 
@@ -143,16 +147,18 @@ const Home = () => {
 
       {/* 2. GAKS Section (Intro and Icon Menu) */}
       <section className="container mx-auto max-w-4xl px-6 py-20">
-        <DecorativeHeader title="GAKS" />
+        <DecorativeHeader title="Services" />
 
         <p className="text-center text-sm sm:text-base text-gray-700 leading-relaxed max-w-2xl mx-auto mb-16">
-          Established in 2005, Halftone LLC is a fully integrated real estate
-          development, investment, and management company with a proven track
-          record of creating value in high-growth markets. We focus on
-          design-led projects that harmonize with their natural surroundings,
-          delivering unique experiences through meticulous planning and
-          execution. Our team of experienced professionals manages all phases of
-          the development cycle, from site acquisition to final delivery.
+          We are a professional team of practicing architects, designers and
+          CG-artists. We offer our clients standout, photo-realistic and stylish
+          static renders and animations, both in residential and commercial
+          spheres.The spectrum of our 3D rendering services varies from creating
+          indoor interior scenes to large-scale exterior streetscapes including
+          facades, close-ups, perspective and axonometric views, volumetric
+          floor plans, photo-montages, post-production, video processing etc. We
+          are ready to create images and videos representing your upcoming
+          designs in their best light and angles!
         </p>
 
         {/* Feature Icons (4-column grid for the icons) */}
