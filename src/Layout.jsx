@@ -13,22 +13,22 @@ const Layout = ({ children }) => {
       {/* You would place your Navigation component here */}
       <header className="w-full h-16 border-b border-gray-100 flex items-center justify-between px-6">
         {/* <div className="text-xl font-bold">HALFTONE</div> */}
-        <a href="/" className="text-xl font-bold no-underline text-inherit">
+        <Link to="/" className="text-xl font-bold no-underline text-inherit">
           HALFTONE
-        </a>
+        </Link>
         <nav>
-          <a href="/" className="px-3 hover:text-gray-600">
+          <Link to="/" className="px-3 hover:text-gray-600">
             Home
-          </a>
-          <a href="/about" className="px-3 hover:text-gray-600">
+          </Link>
+          <Link to="/about" className="px-3 hover:text-gray-600">
             About
-          </a>
-          <a href="/how-it-works" className="px-3 hover:text-gray-600">
+          </Link>
+          <Link to="/how-it-works" className="px-3 hover:text-gray-600">
             How It Works
-          </a>
-          <a href="/contact" className="px-3 hover:text-gray-600">
+          </Link>
+          <Link to="/contact" className="px-3 hover:text-gray-600">
             Contact
-          </a>
+          </Link>
         </nav>
       </header>
 
