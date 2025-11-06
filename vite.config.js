@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/halftone-website/",
+  base: "/halftone-website",
 })
