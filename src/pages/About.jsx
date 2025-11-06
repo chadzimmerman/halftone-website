@@ -29,17 +29,21 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 // Component for the Halftone Founder Images
-const HalftoneFounder = ({ name, title, bio, imageRatio, imageText }) => (
+const HalftoneFounder = ({
+  name,
+  title,
+  bio,
+  imageRatio,
+  imageText,
+  imageSrc,
+}) => (
   <div className="flex flex-col items-start space-y-4 p-4">
     {/* Image container: using a mock B&W halftone effect */}
     <div className="w-full h-auto bg-gray-900 border-2 border-gray-900 overflow-hidden">
       <ImagePlaceholder
         ratioClass={imageRatio}
         text={imageText}
-        src={`https://placehold.co/${imageRatio}/1a1a1a/aaaaaa?text=${imageText.replace(
-          / /g,
-          "+"
-        )}`}
+        src={imageSrc}
       />
     </div>
     <div className="w-full">
@@ -63,37 +67,31 @@ const About = () => {
   const founders = [
     {
       name: "Lana",
-      title: "Chief Designer",
-      bio: "Lena manages the design studio and creative output. She brings over 15 years of experience in high-end residential and commercial architecture, specializing in sustainable, minimalist design principles.",
+      title: "Lead Architect / 3D Artist",
+      bio: "I have been both an architect and a 3D-visualizer for over 10 years, and I absolutely love getting to expand my skills in both. Working as an architect prepared me to not only to make exteriors for major companies all over the world but to help tell the stories I want to tell along the way. I love drawing, illustrating books and designing facades! ",
       imageRatio: "400x500",
-      imageText: "Lena",
+      imageText: "Lana",
+      imageSrc: "/assets/lana-halftone.avif",
     },
     {
       name: "Chad",
-      title: "Head of Operations",
-      bio: "Jack oversees project execution and logistics, ensuring every project is delivered on time and within budget. His background in construction management provides robust technical oversight.",
+      title: "Technology and Systems Architect",
+      bio: "My passion is enabling architecture and visual art through digital tools — helping ideas move from concept to reality. I love solving problems, supporting people, and building infrastructure that makes creative work easier. Outside of the studio, I enjoy filmmaking and writing books as personal creative outlets.",
       imageRatio: "400x500",
-      imageText: "Jack",
+      imageText: "Chad",
+      imageSrc: "/assets/chad-halftone.avif",
     },
     {
       name: "Lisa",
-      title: "Lead Architect",
-      bio: "Sarah is responsible for initial concept generation and client liaison. Her passion lies in integrating modern technology with traditional building methods to create unique spaces.",
+      title: "Architect / Interior Designer",
+      bio: "I have been an architect and 3D-artist in Europe for over nine years. I bring with me all my years of interior design experience from lofty city apartments to rural cabin renovations and everything in-between. I enjoy Asian culture, traveling and creating stylized renders!",
       imageRatio: "400x500",
-      imageText: "Sarah",
-    },
-    {
-      name: "Peter",
-      title: "Financial Director",
-      bio: "Ken handles all fiscal aspects of Halftone, from investment strategy to cost analysis. His expertise ensures the financial viability and long-term stability of the firm.",
-      imageRatio: "400x500",
-      imageText: "Ken",
+      imageText: "Lisa",
+      imageSrc: "/assets/lisa-halftone.avif",
     },
   ];
 
   return (
-    // 1. REMOVED: <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased ">
-    // 2. REMOVED: <nav className="...">...</nav> (Navigation Bar)
     <div className="bg-white text-gray-900">
       {/* 1. Bio Header Section */}
       <section className="container mx-auto max-w-6xl px-6 py-20 flex flex-col items-center sm:items-start sm:flex-row space-y-8 sm:space-y-0 sm:space-x-16">
@@ -103,23 +101,23 @@ const About = () => {
           <div className="grid grid-cols-2 gap-4 text-sm text-gray-700">
             <div className="space-y-2">
               <p className="font-semibold">WHO WE ARE</p>
-              <p>Architecture Studio</p>
+              <p>Architectural Bureau</p>
               <p>Interior Design Firm</p>
-              <p>Real Estate Developer</p>
+              <p>Animation Studio</p>
             </div>
             <div className="space-y-2">
               <p className="font-semibold">WHERE WE WORK</p>
-              <p>New York</p>
-              <p>Los Angeles</p>
-              <p>Miami</p>
+              <p>Denver</p>
+              <p>Moscow</p>
+              <p>Fukuoka</p>
             </div>
           </div>
           <div className="mt-8 text-sm text-gray-700">
             <p className="font-semibold">WHAT WE DO</p>
             <p>Design & Planning</p>
             <p>Project Management</p>
-            <p>Investment Strategy</p>
-            <p>Sustainability Consulting</p>
+            <p>Visualization</p>
+            <p>Animation</p>
           </div>
         </div>
 
@@ -129,7 +127,7 @@ const About = () => {
             <ImagePlaceholder
               ratioClass="800x800"
               text="Architectural Display"
-              src={`https://placehold.co/800x800/222222/cccccc?text=Display+Image`}
+              src={"assets/about-page-img.avif"}
             />
           </div>
         </div>
@@ -149,80 +147,79 @@ const About = () => {
           <div className="space-y-10">
             <div className="space-y-4">
               <h3 className="text-xl font-black tracking-wide text-gray-900">
-                OUR VISION
+                Who we are:
               </h3>
               <p
                 className="text-sm text-gray-700 leading-relaxed"
                 style={{ letterSpacing: "0.01em" }}
               >
-                Halftone LLC was founded on the belief that architecture should
-                be a harmonious blend of form, function, and environment. We
-                strive to create spaces that are not only aesthetically
-                captivating but also deeply responsive to the needs of the
-                inhabitants and the context of the location. Our projects
-                emphasize natural light, clean lines, and durable, sustainable
-                materials, ensuring enduring quality and minimal environmental
-                impact. We view every design as a collaborative journey with the
-                client.
+                We are a professional team of practicing architects, designers
+                and CG-artists. We offer our clients standout, photo-realistic
+                and stylish static renders and animations, both in the
+                residential and commercial spheres.
               </p>
             </div>
 
             <div className="space-y-4">
               <h3 className="text-xl font-black tracking-wide text-gray-900">
-                DESIGN PHILOSOPHY
+                What we make:
               </h3>
               <p
                 className="text-sm text-gray-700 leading-relaxed"
                 style={{ letterSpacing: "0.01em" }}
               >
-                Our philosophy is rooted in minimalism and strategic simplicity.
-                We pare down to the essential, focusing on the quality of space
-                over quantity of detail. This approach allows the inherent
-                beauty of the structure and the surrounding landscape to become
-                the primary design elements. We integrate smart technology
-                discreetly, enhancing usability without visual clutter. From
-                concept to completion, we maintain an uncompromising focus on
-                craftmanship and precision, delivering results that stand the
-                test of time.
+                The spectrum of our 3D architectural services varies from
+                creating indoor interior scenes to large-scale exterior
+                streetscapes including facades, close-ups, perspective and
+                axonometric views, volumetric floor plans, photomontages,
+                post-production, video processing and more. We are ready to
+                create images and videos representing your upcoming designs in
+                their best light and angles! Besides that, we provide modeling
+                and design services for those needing a more complete project
+                workup.
               </p>
             </div>
 
             <div className="space-y-4">
               <h3 className="text-xl font-black tracking-wide text-gray-900">
-                PROJECT EXECUTION
+                Why you need our services:
               </h3>
               <p
                 className="text-sm text-gray-700 leading-relaxed"
                 style={{ letterSpacing: "0.01em" }}
               >
-                We manage the entire project lifecycle in-house, from site
-                acquisition and zoning approval to final construction oversight.
-                This integrated approach ensures seamless communication,
-                efficient problem-solving, and strict adherence to our high
-                quality standards. Our project management team utilizes advanced
-                tools for scheduling and budget control, providing clients with
-                transparency and confidence. We pride ourselves on navigating
-                complex regulatory environments to deliver unique, high-value
-                assets.
+                Our team is trusted by home builders, real estate agents,
+                developers, architects and designers from around the world. Our
+                goal is to develop the perfect render or 4k video of an
+                architectural or interior project from simple 2D drawings or
+                sketch models. Our clients will see the image of their concepts
+                in different varieties, materials, color schemes and lighting
+                scenarios. Beyond that, our professionals will showcase your
+                ideas in the exclusive, artistic way it deserves. We will build
+                an outstanding mood and atmosphere to breathe life into your
+                project! Moreover, it is proven and guaranteed that our 3D
+                products will generate more interest among your potential
+                clients as well as for developers of commercial real estate.
               </p>
             </div>
 
             <div className="space-y-4">
               <h3 className="text-xl font-black tracking-wide text-gray-900">
-                CULTURE
+                Why us:
               </h3>
               <p
                 className="text-sm text-gray-700 leading-relaxed"
                 style={{ letterSpacing: "0.01em" }}
               >
-                The Halftone culture is built on passion, professionalism, and
-                continuous learning. Our team consists of licensed architects,
-                interior designers, financial analysts, and construction experts
-                who share a common commitment to design excellence. We foster a
-                supportive and innovative environment where new ideas are
-                welcomed and challenged constructively. This dynamic culture
-                enables us to tackle diverse and ambitious projects while
-                maintaining a boutique, client-focused approach.
+                Each member of our team has a professional degree and many years
+                of working experience in the fields of computer graphics,
+                architecture, art and project management. We offer you our
+                time-tested pipeline, large collection of professional 3D models
+                and textures to guarantee an exceptional quality, outstanding
+                service for a competitive price. We love what we do and we
+                believe it shows in our work. We want to make your project
+                outstanding. Thank you for considering the Halftone team, we
+                can’t wait to begin bringing your dreams to life!
               </p>
             </div>
           </div>
@@ -238,8 +235,10 @@ const About = () => {
           <p className="text-sm text-gray-500">OUR TEAM</p>
         </div>
 
-        {/* Founders Grid (2x2 layout) */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {/* Rest In Peace, Knyaz Myshkin */}
+
+        {/* Founders Grid (Updated for 3 members) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4 mx-auto max-w-5xl">
           {founders.map((founder, index) => (
             <HalftoneFounder
               key={index}
@@ -248,13 +247,11 @@ const About = () => {
               bio={founder.bio}
               imageRatio={founder.imageRatio}
               imageText={founder.imageText}
+              imageSrc={founder.imageSrc}
             />
           ))}
         </div>
       </section>
-
-      {/* 3. REMOVED: Footer Section */}
-      {/* 4. REMOVED: Final closing </div> for the top-level wrapper */}
     </div>
   );
 };

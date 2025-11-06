@@ -24,53 +24,6 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 const PortfolioPage = () => {
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
-      {/* Top Navigation Bar (Consistent with previous pages) */}
-      <nav className="flex items-center justify-between px-6 sm:px-12 py-4 border-b border-gray-100">
-        <div className="flex items-center space-x-6">
-          <span className="text-sm font-light tracking-[0.3em] text-gray-900">
-            HALFTONE
-          </span>
-          <div className="flex items-center space-x-2 text-gray-500">
-            {/* Social Icons matching the image */}
-            <a href="#" aria-label="Instagram" className="hover:text-gray-900">
-              <Instagram className="w-4 h-4" />
-            </a>
-            <a href="#" aria-label="Email" className="hover:text-gray-900">
-              <Mail className="w-4 h-4" />
-            </a>
-          </div>
-        </div>
-
-        {/* Search and Nav Links */}
-        <div className="flex items-center space-x-6">
-          <div className="relative hidden sm:block">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="px-2 py-1 text-sm border border-gray-300 focus:outline-none focus:border-gray-900 w-40"
-            />
-          </div>
-          <a
-            href="#"
-            className="text-xs text-gray-700 hover:text-gray-900 hidden sm:block"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="text-xs text-gray-700 hover:text-gray-900 hidden sm:block"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="text-xs text-gray-700 hover:text-gray-900 hidden sm:block"
-          >
-            More
-          </a>
-        </div>
-      </nav>
-
       {/* Hero Section - Title and Description */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         {/* Left Column: Project Title */}
@@ -137,22 +90,6 @@ const PortfolioPage = () => {
           src="https://placehold.co/1200x675/c0c0c0/444444?text=Grivas+Render+6+Top+View"
         />
       </section>
-
-      {/* Footer Section (Consistent with previous pages) */}
-      <footer className="bg-white pt-10 pb-16 text-center text-xs text-gray-500 border-t border-gray-100">
-        <p className="mb-2">
-          Find our work on{" "}
-          <a href="#" className="font-semibold text-gray-700 hover:underline">
-            Behance
-          </a>{" "}
-          and{" "}
-          <a href="#" className="font-semibold text-gray-700 hover:underline">
-            Instagram
-          </a>
-        </p>
-        <p className="mb-2">halftonellc@gmail.com</p>
-        <p>© 2022 by Halftone, LLC.</p>
-      </footer>
     </div>
   );
 };
