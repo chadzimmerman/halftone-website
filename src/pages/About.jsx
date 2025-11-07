@@ -71,7 +71,7 @@ const About = () => {
       bio: "I have been both an architect and a 3D-visualizer for over 10 years, and I absolutely love getting to expand my skills in both. Working as an architect prepared me to not only to make exteriors for major companies all over the world but to help tell the stories I want to tell along the way. I love drawing, illustrating books and designing facades! ",
       imageRatio: "400x500",
       imageText: "Lana",
-      imageSrc: "/assets/lana-halftone.avif",
+      imageSrc: "./assets/lana-halftone.avif",
     },
     {
       name: "Chad",
@@ -79,7 +79,7 @@ const About = () => {
       bio: "My passion is enabling architecture and visual art through digital tools — helping ideas move from concept to reality. I love solving problems, supporting people, and building infrastructure that makes creative work easier. Outside of the studio, I enjoy filmmaking and writing books as personal creative outlets.",
       imageRatio: "400x500",
       imageText: "Chad",
-      imageSrc: "/assets/chad-halftone.avif",
+      imageSrc: "./assets/chad-halftone.avif",
     },
     {
       name: "Lisa",
@@ -87,7 +87,7 @@ const About = () => {
       bio: "I have been an architect and 3D-artist in Europe for over nine years. I bring with me all my years of interior design experience from lofty city apartments to rural cabin renovations and everything in-between. I enjoy Asian culture, traveling and creating stylized renders!",
       imageRatio: "400x500",
       imageText: "Lisa",
-      imageSrc: "/assets/lisa-halftone.avif",
+      imageSrc: "./assets/lisa-halftone.avif",
     },
   ];
 
