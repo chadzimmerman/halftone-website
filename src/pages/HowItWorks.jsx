@@ -295,7 +295,7 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 const processSteps = [
   {
     title: "Step 1: Consultation",
-    imagePath: "/assets/step1.avif",
+    imagePath: "./assets/step1.avif",
     imageRatio: "800x1000",
     imageAlt: "Consultation Sketch",
     content: (
@@ -339,7 +339,7 @@ const processSteps = [
   },
   {
     title: "Step Two: Working Process",
-    imagePath: "/assets/step2.avif",
+    imagePath: "./assets/step2.avif",
     imageRatio: "800x1200",
     imageAlt: "Working Process Draft",
     content: (
@@ -366,7 +366,7 @@ const processSteps = [
   },
   {
     title: "Step 3: Final Proof & Render",
-    imagePath: "/assets/step3.avif",
+    imagePath: "./assets/step3.avif",
     imageRatio: "800x1000",
     imageAlt: "Final Render",
     content: (

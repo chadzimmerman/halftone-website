@@ -47,7 +47,7 @@ const Contact = () => {
               <ImagePlaceholder
                 ratioClass="700x500"
                 text="Design Book"
-                src="/assets/book-contact-img.jpg"
+                src="./assets/book-contact-img.jpg"
               />
             </div>
 
