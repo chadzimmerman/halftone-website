@@ -216,6 +216,7 @@ const Home = () => {
               <Link
                 key={index}
                 to={item.href}
+                onClick={() => window.scrollTo(0, 0)}
                 className="flex-1 text-center py-4 group hover:bg-stone-200 transition duration-150"
               >
                 <item.icon className="w-5 h-5 text-gray-800 mx-auto mb-1 group-hover:text-amber-700" />
