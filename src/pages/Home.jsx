@@ -119,10 +119,14 @@ const Home = () => {
   ];
 
   const footerLinks = [
-    { icon: Briefcase, text: "HOW IT WORKS", href: "/how-it-works" },
-    { icon: User, text: "ABOUT", href: "/about" },
-    { icon: Mail, text: "CONTACT", href: "/contact" },
-    { icon: MapPin, text: "LOCATION", href: "/contact" },
+    {
+      icon: Briefcase,
+      text: "HOW IT WORKS",
+      href: "/halftone-website/how-it-works",
+    },
+    { icon: User, text: "ABOUT", href: "/halftone-website/about" },
+    { icon: Mail, text: "CONTACT", href: "/halftone-website/contact" },
+    { icon: MapPin, text: "LOCATION", href: "/halftone-website/contact" },
   ];
 
   return (
