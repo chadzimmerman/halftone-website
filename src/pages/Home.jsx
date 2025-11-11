@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Icons used in the design (simulated with lucide-react names)
 import {
@@ -122,11 +123,11 @@ const Home = () => {
     {
       icon: Briefcase,
       text: "HOW IT WORKS",
-      href: "/halftone-website/how-it-works",
+      href: "/how-it-works",
     },
-    { icon: User, text: "ABOUT", href: "/halftone-website/about" },
-    { icon: Mail, text: "CONTACT", href: "/halftone-website/contact" },
-    { icon: MapPin, text: "LOCATION", href: "/halftone-website/contact" },
+    { icon: User, text: "ABOUT", href: "/about" },
+    { icon: Mail, text: "CONTACT", href: "/contact" },
+    { icon: MapPin, text: "LOCATION", href: "/contact" },
   ];
 
   return (
@@ -212,16 +213,16 @@ const Home = () => {
           {/* Footer Navigation/Contact Links */}
           <div className="flex justify-center border-t border-b border-gray-300 divide-x divide-gray-300 max-w-lg mx-auto">
             {footerLinks.map((item, index) => (
-              <a
+              <Link
                 key={index}
-                href={item.href}
+                to={item.href}
                 className="flex-1 text-center py-4 group hover:bg-stone-200 transition duration-150"
               >
                 <item.icon className="w-5 h-5 text-gray-800 mx-auto mb-1 group-hover:text-amber-700" />
                 <span className="text-xs tracking-wider font-light text-gray-700">
                   {item.text}
                 </span>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
