@@ -62,24 +62,6 @@ const Contact = () => {
                   and let us know how we can bring your project to the next
                   level.
                 </p>
-
-                {/* Bottom Social Links in Card */}
-                {/* <div className="flex space-x-4">
-                  <a
-                    href="#"
-                    aria-label="Instagram"
-                    className="hover:text-gray-600"
-                  >
-                    <Instagram className="w-5 h-5 text-gray-900" />
-                  </a>
-                  <a
-                    href="#"
-                    aria-label="Email"
-                    className="hover:text-gray-600"
-                  >
-                    <Mail className="w-5 h-5 text-gray-900" />
-                  </a>
-                </div> */}
               </div>
             </div>
           </div>
@@ -104,7 +86,11 @@ const Contact = () => {
 
           {/* Right Column: Contact Form */}
           <div>
-            <form className="space-y-4">
+            <form
+              className="space-y-4"
+              action="https://formspree.io/f/meovqknq"
+              method="POST"
+            >
               {/* Input fields as required by the image (small, thin border, uppercase labels) */}
               <div className="grid grid-cols-3 gap-3">
                 {/* Labels */}
@@ -130,16 +116,19 @@ const Contact = () => {
                 {/* Inputs */}
                 <input
                   id="firstName"
+                  name="firstName"
                   type="text"
                   className="w-full p-2 border border-gray-300 bg-white text-gray-800 text-sm col-span-1 focus:outline-none focus:ring-1 focus:ring-gray-400 -mt-2"
                 />
                 <input
                   id="lastName"
+                  name="lastName"
                   type="text"
                   className="w-full p-2 border border-gray-300 bg-white text-gray-800 text-sm col-span-1 focus:outline-none focus:ring-1 focus:ring-gray-400 -mt-2"
                 />
                 <input
                   id="email"
+                  name="email"
                   type="email"
                   required
                   className="w-full p-2 border border-gray-300 bg-white text-gray-800 text-sm col-span-1 focus:outline-none focus:ring-1 focus:ring-gray-400 -mt-2"
@@ -154,6 +143,7 @@ const Contact = () => {
               </label>
               <textarea
                 id="message"
+                name="message"
                 rows="6"
                 className="w-full p-3 border border-gray-300 bg-white text-gray-800 text-sm focus:outline-none focus:ring-1 focus:ring-gray-400"
               ></textarea>
