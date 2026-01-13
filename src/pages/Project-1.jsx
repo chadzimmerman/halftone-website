@@ -19,71 +19,46 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 const PortfolioPage1 = () => {
-  // We use encodeURIComponent or manually replace spaces with %20 for GitHub Pages compatibility
-  const folderPath = "Ali%20Abaan_Residential%20Neighborhood_Texas%201";
-  const imageBase = `${process.env.PUBLIC_URL}/assets/Halftone-2026/${folderPath}`;
+  // 1. The path starts from /assets/ because 'public' is the root
+  const imageBase =
+    "/assets/Halftone-2026/Ali Abaan_Residential Neighborhood_Texas 1";
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
       {/* Hero Section */}
-      <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-        <div>
-          <h1 className="text-4xl sm:text-5xl font-light leading-tight tracking-wide text-gray-900 mb-4">
-            Residential <br /> Neighborhood.
-          </h1>
-          <p className="text-sm text-gray-600">Exterior Visualization</p>
-        </div>
-
-        <div className="text-sm text-gray-700 space-y-4">
-          <p className="text-xs text-gray-500 uppercase tracking-widest mb-4">
-            Location: Houston, TX
-          </p>
-          <p className="leading-relaxed">
-            Visualization project of a residential neighborhood located in
-            Houston for AMA.
-          </p>
-          <div className="pt-2 space-y-1 text-gray-600">
-            <p>
-              <span className="font-medium text-gray-900">Renders:</span>{" "}
-              Halftone, LLC
-            </p>
-            <p>
-              <span className="font-medium text-gray-900">Architecture:</span>{" "}
-              AMA / Abaan Ali
-            </p>
-          </div>
-          <p className="text-xs text-gray-500 uppercase tracking-widest pt-4">
-            Project Year: 2025
-          </p>
-        </div>
+      <section className="container mx-auto max-w-4xl px-6 py-16">
+        <h1 className="text-4xl font-light mb-4">Residential Neighborhood</h1>
+        <p className="text-sm text-gray-600">Location: Houston, TX</p>
+        <p className="leading-relaxed mt-4">Visualization project for AMA.</p>
       </section>
 
       {/* Image Gallery */}
-      <section className="container mx-auto max-w-4xl px-4 sm:px-0 pb-16 space-y-12">
+      <section className="container mx-auto max-w-4xl px-4 pb-16 space-y-12">
+        {/* 2. Use the short path + the filename. No special encoding needed locally */}
         <ImagePlaceholder
           ratioClass="16x9"
-          text="Exterior View 1 Texas"
-          src={`${imageBase}/exterior%20view%201_Texas.JPG`}
+          text="Exterior View 1"
+          src={`${imageBase}/exterior_view_1_Texas.JPG`}
         />
         <ImagePlaceholder
           ratioClass="16x9"
-          text="Exterior View 1 Texas"
-          src={`${imageBase}/exterior%20view%202_Texas.JPG`}
+          text="Exterior View 2"
+          src={`${imageBase}/exterior_view_2_Texas.JPG`}
         />
         <ImagePlaceholder
           ratioClass="16x9"
-          text="Exterior View 1 Texas"
-          src={`${imageBase}/exterior%20view%203_Texas.JPG`}
+          text="Exterior View 3"
+          src={`${imageBase}/exterior_view_3_Texas.JPG`}
         />
         <ImagePlaceholder
           ratioClass="16x9"
-          text="Exterior View 1 Texas"
-          src={`${imageBase}/interior%20view%201_Texas.JPG`}
+          text="Interior View 1"
+          src={`${imageBase}/interior_view_1_Texas.jpg`}
         />
         <ImagePlaceholder
           ratioClass="16x9"
-          text="Exterior View 1 Texas"
-          src={`${imageBase}/interior%20view%202_Texas.JPG`}
+          text="Interior View 2"
+          src={`${imageBase}/interior_view_2_Texas.jpg`}
         />
       </section>
     </div>
