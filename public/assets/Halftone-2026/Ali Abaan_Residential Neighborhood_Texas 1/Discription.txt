@@ -1,0 +1,5 @@
+Archviz for Residential Neighborhood
+
+Visualization project of a residential neighborhood located in Houston for AMA
+
+Type: Exterior | Location: Houston, TX | Renders: Halftone, LLC | Architecture: AMA/Abaan Ali
