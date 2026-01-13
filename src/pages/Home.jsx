@@ -74,49 +74,72 @@ const FeatureIcon = ({ Icon, label, description }) => (
 const Home = () => {
   // Mock image data to replicate the layout structure
   const projectImages = [
-    // Row 1 (2 columns)
-    { ratio: "600x400", text: "Resort Housing", span: "col-span-1" },
-    { ratio: "600x400", text: "Urban Apartments", span: "col-span-1" },
-
-    // Row 2 (1 column wide, 1 column tall)
     {
-      ratio: "800x450",
-      text: "Forest Cabin",
-      span: "col-span-2 md:col-span-1",
+      src: "/assets/Halftone-2026/Ali Abaan_Residential Neighborhood_Texas 1/exterior view 1_Texas.JPG",
+      text: "Residential Neighborhood Texas",
+      span: "col-span-1",
+      link: "/projects/texas-neighborhood-1",
     },
     {
-      ratio: "400x600",
-      text: "Modern Interior",
-      span: "col-span-2 md:col-span-1",
+      src: "/assets/Halftone-2026/Ali Abaan_Residential Neighborhood_Texas 2/Final Render_Texas.jpg",
+      text: "Texas Final Render",
+      span: "col-span-1",
+      link: "/projects/texas-neighborhood-2",
     },
-
-    // Row 3 (2 columns wide)
-    { ratio: "600x400", text: "Swimming Pool", span: "col-span-1" },
-    { ratio: "600x400", text: "Suburban House", span: "col-span-1" },
-
-    // Row 4 (2 columns, slightly offset look in the original)
-    { ratio: "600x400", text: "Minimalist Kitchen", span: "col-span-1" },
-    { ratio: "400x600", text: "Brick Facade", span: "col-span-1" },
-
-    // Row 5 (2 columns)
-    { ratio: "400x600", text: "Living Room View", span: "col-span-1" },
-    { ratio: "600x400", text: "Office Space", span: "col-span-1" },
-
-    // Row 6 (2 columns)
-    { ratio: "600x400", text: "Nature Retreat", span: "col-span-1" },
-    { ratio: "400x600", text: "Industrial Finish", span: "col-span-1" },
-
-    // Row 7 (2 columns)
-    { ratio: "600x400", text: "Rustic Bedroom", span: "col-span-1" },
-    { ratio: "600x400", text: "Small Home", span: "col-span-1" },
-
-    // Row 8 (2 columns)
-    { ratio: "600x400", text: "Street View", span: "col-span-1" },
-    { ratio: "400x600", text: "Mountain Vista", span: "col-span-1" },
-
-    // Row 9 (2 columns - the final set before the footer)
-    { ratio: "400x600", text: "High Rise", span: "col-span-1" },
-    { ratio: "600x400", text: "Window Frames", span: "col-span-1" },
+    {
+      src: "/assets/Halftone-2026/DARUL HUDA MASJID_mosque/DARUL HUDA MASJID.jpg",
+      text: "Darul Huda Masjid",
+      span: "col-span-2 md:col-span-1",
+      link: "/projects/mosque",
+    },
+    {
+      src: "/assets/Halftone-2026/Greece Villa/jpeg/view 5.jpg",
+      text: "Greece Villa",
+      span: "col-span-2 md:col-span-1",
+      link: "/projects/greece-villa",
+    },
+    {
+      src: "/assets/Halftone-2026/House in Pine Woods/Jpeg/view 2.jpg",
+      text: "House in Pine Woods",
+      span: "col-span-1",
+      link: "/projects/pine-woods",
+    },
+    {
+      src: "/assets/Halftone-2026/KWU_California/KWU_CALIFORNIA_RENDER 2_Day Interior.jpg",
+      text: "KWU California Interior",
+      span: "col-span-1",
+      link: "/projects/california-interior",
+    },
+    {
+      src: "/assets/Halftone-2026/Mariya Podryadova_Villa/Мария Подрядова_Частная вилла_Вид 7_светлее.jpg",
+      text: "Mariya Podryadova Villa",
+      span: "col-span-1",
+      link: "/projects/mariya-villa",
+    },
+    {
+      src: "/assets/Halftone-2026/Neo contemporary residence in Portland/camera 2_11 copy.jpg",
+      text: "Portland Residence",
+      span: "col-span-1",
+      link: "/projects/portland-residence",
+    },
+    {
+      src: "/assets/Halftone-2026/Office Building/JPEG/VIEW 8.jpg",
+      text: "Office Building 1",
+      span: "col-span-1",
+      link: "/projects/office-1",
+    },
+    {
+      src: "/assets/Halftone-2026/Office Building 2/jpeg/view 1.jpg",
+      text: "Office Building 2",
+      span: "col-span-1",
+      link: "/projects/office-2",
+    },
+    {
+      src: "/assets/Halftone-2026/Scandinavian house/VIEW 2.jpg",
+      text: "Scandinavian House",
+      span: "col-span-2",
+      link: "/projects/scandinavian-house",
+    },
   ];
 
   const footerLinks = [
@@ -196,9 +219,27 @@ const Home = () => {
       <section className="px-4 sm:px-12 pb-20">
         <div className="grid grid-cols-2 gap-4 sm:gap-6">
           {projectImages.map((img, index) => (
-            <div key={index} className={img.span}>
-              <ImagePlaceholder ratioClass={img.ratio} text={img.text} />
-            </div>
+            <Link
+              to={img.link}
+              key={index}
+              className={`${img.span} block group overflow-hidden rounded-sm shadow-lg`}
+            >
+              <div className="relative w-full overflow-hidden">
+                <img
+                  src={img.src}
+                  alt={img.text}
+                  className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-105"
+                  // You can adjust or remove the aspect ratio based on your needs
+                  style={{ aspectRatio: "3/2" }}
+                />
+                {/* Optional: Overlay that appears on hover */}
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span className="text-white text-xs tracking-widest uppercase font-light">
+                    View Project
+                  </span>
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
       </section>
