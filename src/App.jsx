@@ -5,7 +5,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import HowItWorks from "./pages/HowItWorks.jsx";
-import PortfolioPage from "./pages/PortfolioPage.jsx";
+import PortfolioPage from "./pages/PortfolioPageTemplate.jsx";
 
 function App() {
   return (
