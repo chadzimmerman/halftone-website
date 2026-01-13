@@ -38,7 +38,7 @@ const PortfolioPage1 = () => {
         <ImagePlaceholder
           ratioClass="16x9"
           text="Exterior View 1"
-          src="/assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_1/exterior_view_1_Texas.JPG"
+          src="assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_1/exterior_view_1_Texas.JPG"
         />
         <ImagePlaceholder
           ratioClass="16x9"
