@@ -21,7 +21,7 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 const PortfolioPage1 = () => {
   // 1. The path starts from /assets/ because 'public' is the root
   const imageBase =
-    "assets/Halftone-2026/Ali Abaan_Residential Neighborhood_Texas 1";
+    "assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_1";
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
