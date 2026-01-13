@@ -5,7 +5,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import HowItWorks from "./pages/HowItWorks.jsx";
-import PortfolioPage from "./pages/PortfolioPageTemplate.jsx";
+import PortfolioPage1 from "./pages/Project-1.jsx";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
-        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/texas-residential-1" element={<PortfolioPage1 />} />
       </Routes>
     </Layout>
   );

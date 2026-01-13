@@ -18,7 +18,7 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
   );
 };
 
-const PortfolioPage = () => {
+const PortfolioPage1 = () => {
   // We use encodeURIComponent or manually replace spaces with %20 for GitHub Pages compatibility
   const folderPath = "Ali%20Abaan_Residential%20Neighborhood_Texas%201";
   const imageBase = `${process.env.PUBLIC_URL}/assets/Halftone-2026/${folderPath}`;
@@ -99,4 +99,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default PortfolioPage1;
