@@ -138,7 +138,7 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <img
             //https://placehold.co/1200x800/222222/eeeeee?text=Forest+Architecture+Hero
-            src="/assets/Halftone-2026/House in Pine Woods/Jpeg/view 1.jpg"
+            src="/assets/Halftone-2026/House%20in%20Pine%20Woods/Jpeg/view%201.jpg"
             alt="Hero Background"
             className="w-full h-full object-cover"
           />
