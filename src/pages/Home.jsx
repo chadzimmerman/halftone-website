@@ -78,7 +78,7 @@ const Home = () => {
       src: "assets/Halftone-2026/Ali Abaan_Residential Neighborhood_Texas 1/exterior view 1_Texas.JPG",
       text: "Residential Neighborhood Texas",
       span: "col-span-1",
-      link: "/projects/texas-neighborhood-1",
+      link: "/texas-neighborhood-1",
     },
     {
       src: "assets/Halftone-2026/Ali Abaan_Residential Neighborhood_Texas 2/Final Render_Texas.jpg",

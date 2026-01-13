@@ -85,15 +85,6 @@ const PortfolioPage1 = () => {
           text="Exterior View 1 Texas"
           src={`${imageBase}/interior%20view%202_Texas.JPG`}
         />
-
-        {/* Add more images here by following the file naming convention */}
-        {/* Example: 
-        <ImagePlaceholder
-          ratioClass="16x9"
-          text="Exterior View 2"
-          src={`${imageBase}/exterior%20view%202_Texas.JPG`}
-        /> 
-        */}
       </section>
     </div>
   );

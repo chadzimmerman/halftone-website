@@ -15,7 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
-        <Route path="/texas-residential-1" element={<PortfolioPage1 />} />
+        <Route path="/texas-neighborhood-1" element={<PortfolioPage1 />} />
       </Routes>
     </Layout>
   );
