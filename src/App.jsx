@@ -7,6 +7,8 @@ import Contact from "./pages/Contact.jsx";
 import HowItWorks from "./pages/HowItWorks.jsx";
 import PortfolioPage1 from "./pages/Project-1.jsx";
 import PortfolioPage2 from "./pages/Project-2.jsx";
+import PortfolioPage3 from "./pages/Project-3.jsx";
+import PortfolioPage4 from "./pages/Project-4.jsx";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/how-it-works" element={<HowItWorks />} />
         <Route path="/texas-neighborhood-1" element={<PortfolioPage1 />} />
         <Route path="/texas-neighborhood-2" element={<PortfolioPage2 />} />
+        <Route path="/darul-huda-masjid-mosque" element={<PortfolioPage3 />} />
+        <Route path="/greek-villa" element={<PortfolioPage4 />} />
       </Routes>
     </Layout>
   );
