@@ -20,7 +20,7 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 const PortfolioPage2 = () => {
   // Folder name updated to match your path (with spaces)
   const imageBase =
-    "assets/Halftone-2026/Ali Abaan_Residential Neighborhood_Texas 2";
+    "assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_2";
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
@@ -65,7 +65,7 @@ const PortfolioPage2 = () => {
         <ImagePlaceholder
           ratioClass="16x9"
           text="Final Render Texas"
-          src={`./${imageBase}/Final Render_Texas.jpg`}
+          src={`./${imageBase}/Final_Render_Texas.jpg`}
         />
         {/* You can add more images here as you export them to that folder */}
       </section>
