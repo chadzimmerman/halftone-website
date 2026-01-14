@@ -6,6 +6,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import HowItWorks from "./pages/HowItWorks.jsx";
 import PortfolioPage1 from "./pages/Project-1.jsx";
+import PortfolioPage2 from "./pages/Project-2.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
         <Route path="/texas-neighborhood-1" element={<PortfolioPage1 />} />
+        <Route path="/texas-neighborhood-2" element={<PortfolioPage2 />} />
       </Routes>
     </Layout>
   );
