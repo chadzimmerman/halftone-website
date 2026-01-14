@@ -75,7 +75,7 @@ const Home = () => {
   // Mock image data to replicate the layout structure
   const projectImages = [
     {
-      src: "assets/Halftone-2026/Ali Abaan_Residential Neighborhood_Texas 1/exterior view 1_Texas.JPG",
+      src: "assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_1/exterior_view_1_Texas.JPG",
       text: "Residential Neighborhood Texas",
       span: "col-span-1",
       link: "/texas-neighborhood-1",
