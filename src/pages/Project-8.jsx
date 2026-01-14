@@ -28,7 +28,7 @@ const PortfolioPage8 = () => {
     "bird_view_3_copy.jpg",
     "camera_1_1 copy.jpg",
     "camera_1_4.jpg",
-    "camera_2_11 copy.jpg",
+    "camera_2_11_copy.jpg",
     "camera_3_1 copy.jpg",
     "camera_3_4 copy.jpg",
     "camera_5_11 copy.jpg",

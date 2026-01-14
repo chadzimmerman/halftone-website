@@ -123,7 +123,7 @@ const Home = () => {
       link: "/portland-residence",
     },
     {
-      src: "assets/Halftone-2026/Office_Building/JPEG/VIEW_8.jpg",
+      src: "assets/Halftone-2026/Office_Building/JPEG/VIEW_7.jpg",
       text: "Office Building 1",
       span: "col-span-1",
       link: "/office-1",
