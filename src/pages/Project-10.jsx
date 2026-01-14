@@ -22,7 +22,7 @@ const PortfolioPage10 = () => {
   const imageBase = "assets/Halftone-2026/Office_Building_2/jpeg";
 
   // Assuming a similar set of views (1 through 6), adjust the length if needed
-  const views = Array.from({ length: 6 }, (_, i) => `view_${i + 1}`);
+  const views = Array.from({ length: 1 }, (_, i) => `view_${i + 1}`);
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">

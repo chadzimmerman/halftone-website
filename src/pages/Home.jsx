@@ -105,7 +105,7 @@ const Home = () => {
       link: "/pine-woods",
     },
     {
-      src: "assets/Halftone-2026/KWU_California/KWU_CALIFORNIA_RENDER 2_Day_Interior.jpg",
+      src: "assets/Halftone-2026/KWU_California/KWU_CALIFORNIA_RENDER_2_Day_Interior.jpg",
       text: "KWU California Interior",
       span: "col-span-1",
       link: "/california-interior",

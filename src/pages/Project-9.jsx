@@ -22,7 +22,7 @@ const PortfolioPage9 = () => {
   const imageBase = "assets/Halftone-2026/Office_Building/JPEG";
 
   // Generates array ["VIEW_1", "VIEW_2", ..., "VIEW_8"]
-  const views = Array.from({ length: 8 }, (_, i) => `VIEW_${i + 1}`);
+  const views = Array.from({ length: 7 }, (_, i) => `VIEW_${i + 1}`);
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
