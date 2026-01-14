@@ -38,17 +38,17 @@ const PortfolioPage1 = () => {
         <ImagePlaceholder
           ratioClass="16x9"
           text="Exterior View 1"
-          src={`./${imageBase}/exterior_view_1_Texas.JPG`}
+          src={`./${imageBase}/exterior_view_1_Texas.jpg`}
         />
         <ImagePlaceholder
           ratioClass="16x9"
           text="Exterior View 2"
-          src={`./${imageBase}/exterior_view_2_Texas.JPG`}
+          src={`./${imageBase}/exterior_view_2_Texas.jpg`}
         />
         <ImagePlaceholder
           ratioClass="16x9"
           text="Exterior View 3"
-          src={`./${imageBase}/exterior_view_3_Texas.JPG`}
+          src={`./${imageBase}/exterior_view_3_Texas.jpg`}
         />
         <ImagePlaceholder
           ratioClass="16x9"

@@ -75,7 +75,7 @@ const Home = () => {
   // Mock image data to replicate the layout structure
   const projectImages = [
     {
-      src: "assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_1/exterior_view_1_Texas.JPG",
+      src: "assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_1/exterior_view_1_Texas.jpg",
       text: "Residential Neighborhood Texas",
       span: "col-span-1",
       link: "/texas-neighborhood-1",
@@ -161,7 +161,7 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <img
             //https://placehold.co/1200x800/222222/eeeeee?text=Forest+Architecture+Hero
-            src="assets/Halftone-2026/House%20in%20Pine%20Woods/Jpeg/view%201.jpg"
+            src="assets/Halftone-2026/House_in_Pine_Woods/Jpeg/view_1.jpg"
             alt="Hero Background"
             className="w-full h-full object-cover"
           />
