@@ -68,7 +68,7 @@ const PortfolioPage7 = () => {
             </p>
           </div>
           <p className="text-xs text-gray-500 uppercase tracking-widest pt-4">
-            Project Year: 2025
+            Project Year: 2024
           </p>
         </div>
       </section>
