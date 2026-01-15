@@ -26,7 +26,7 @@ a:hover {
 
 body {
 margin: 0;
-width: 100vw;
+width: 100%;
 align-items: flex-start; 
 justify-content: center; 
 min-width: 320px;

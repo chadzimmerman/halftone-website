@@ -12,22 +12,37 @@ const Layout = ({ children }) => {
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
       {/* 1. Navigation (Full Width) */}
       {/* You would place your Navigation component here */}
-      <header className="w-full h-16 border-b border-gray-100 flex items-center justify-between px-6">
-        {/* <div className="text-xl font-bold">HALFTONE</div> */}
-        <Link to="/" className="text-xl font-bold no-underline text-inherit">
+      <header className="w-full min-h-16 border-b border-gray-100 flex flex-col sm:flex-row items-center justify-between px-6 py-4 sm:py-0">
+        <Link
+          to="/"
+          className="text-xl font-bold no-underline text-inherit mb-3 sm:mb-0 tracking-tighter"
+        >
           HALFTONE
         </Link>
-        <nav>
-          <Link to="/" className="px-3 hover:text-gray-600">
+
+        <nav className="flex flex-wrap justify-center gap-y-2">
+          <Link
+            to="/"
+            className="px-3 text-sm sm:text-base hover:text-gray-600 transition-colors"
+          >
             Home
           </Link>
-          <Link to="/about" className="px-3 hover:text-gray-600">
+          <Link
+            to="/about"
+            className="px-3 text-sm sm:text-base hover:text-gray-600 transition-colors"
+          >
             About
           </Link>
-          <Link to="/how-it-works" className="px-3 hover:text-gray-600">
+          <Link
+            to="/how-it-works"
+            className="px-3 text-sm sm:text-base hover:text-gray-600 transition-colors whitespace-nowrap"
+          >
             How It Works
           </Link>
-          <Link to="/contact" className="px-3 hover:text-gray-600">
+          <Link
+            to="/contact"
+            className="px-3 text-sm sm:text-base hover:text-gray-600 transition-colors"
+          >
             Contact
           </Link>
         </nav>
