@@ -29,8 +29,19 @@
     <!-- Additional -->
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Halftone LLC" />
-    <script type="module" crossorigin src="/assets/index-CjuDpdha.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-COEjccon.css">
+
+    <script>
+      // Pick up redirect stored by 404.html so React Router gets the right path
+      (function () {
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-eSjPpU40.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DQMkzVV5.css">
   </head>
   <body>
     <div id="root"></div>
