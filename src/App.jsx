@@ -20,32 +20,38 @@ import PortfolioPage11 from "./pages/Project-11.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  useEffect(() => {
+    // disable browser scroll restoration so it doesn't fight us
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [pathname]);
   return null;
 }
 
 function App() {
   return (
-    <Layout>
+    <>
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/how-it-works" element={<HowItWorks />} />
-        <Route path="/texas-neighborhood-1" element={<PortfolioPage1 />} />
-        <Route path="/texas-neighborhood-2" element={<PortfolioPage2 />} />
-        <Route path="/darul-huda-masjid-mosque" element={<PortfolioPage3 />} />
-        <Route path="/greek-villa" element={<PortfolioPage4 />} />
-        <Route path="/pine-woods" element={<PortfolioPage5 />} />
-        <Route path="/california-interior" element={<PortfolioPage6 />} />
-        <Route path="/mariya-villa" element={<PortfolioPage7 />} />
-        <Route path="/portland-residence" element={<PortfolioPage8 />} />
-        <Route path="/office-1" element={<PortfolioPage9 />} />
-        <Route path="/office-2" element={<PortfolioPage10 />} />
-        <Route path="/scandinavian-house" element={<PortfolioPage11 />} />
-      </Routes>
-    </Layout>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/texas-neighborhood-1" element={<PortfolioPage1 />} />
+          <Route path="/texas-neighborhood-2" element={<PortfolioPage2 />} />
+          <Route path="/darul-huda-masjid-mosque" element={<PortfolioPage3 />} />
+          <Route path="/greek-villa" element={<PortfolioPage4 />} />
+          <Route path="/pine-woods" element={<PortfolioPage5 />} />
+          <Route path="/california-interior" element={<PortfolioPage6 />} />
+          <Route path="/mariya-villa" element={<PortfolioPage7 />} />
+          <Route path="/portland-residence" element={<PortfolioPage8 />} />
+          <Route path="/office-1" element={<PortfolioPage9 />} />
+          <Route path="/office-2" element={<PortfolioPage10 />} />
+          <Route path="/scandinavian-house" element={<PortfolioPage11 />} />
+        </Routes>
+      </Layout>
+    </>
   );
 }
 
