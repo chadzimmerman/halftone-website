@@ -18,7 +18,6 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 const PortfolioPage2 = () => {
-  // Folder name updated to match your path (with spaces)
   const imageBase =
     "assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_2";
 
@@ -29,7 +28,6 @@ const PortfolioPage2 = () => {
       <link rel="canonical" href="https://halftonellc.com/texas-neighborhood-2" />
       <meta property="og:title" content="Residential Neighborhood Lilburn GA | Halftone LLC Archviz" />
       <meta property="og:url" content="https://halftonellc.com/texas-neighborhood-2" />
-      {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>
           <h1 className="text-4xl sm:text-5xl font-light leading-tight tracking-wide text-gray-900 mb-4">
@@ -65,14 +63,12 @@ const PortfolioPage2 = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
       <section className="container mx-auto max-w-4xl px-4 sm:px-0 pb-16 space-y-12">
         <ImagePlaceholder
           ratioClass="16x9"
           text="Final Render Texas"
           src={`./${imageBase}/Final_Render_Texas.jpg`}
         />
-        {/* You can add more images here as you export them to that folder */}
       </section>
     </div>
   );

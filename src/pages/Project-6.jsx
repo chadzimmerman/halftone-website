@@ -18,10 +18,8 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 const PortfolioPage6 = () => {
-  // Folder path for KWU California
   const imageBase = "assets/Halftone-2026/KWU_California";
 
-  // Array of specific filenames provided
   const images = [
     "KWU_CALIFORNIA_RENDER_2_Night_Interior.jpg",
     "KWU_CALIFORNIA_RENDER_1_Day.jpg",
@@ -37,7 +35,6 @@ const PortfolioPage6 = () => {
       <link rel="canonical" href="https://halftonellc.com/california-interior" />
       <meta property="og:title" content="Cipriano ADU California Interior & Exterior | Halftone LLC Archviz" />
       <meta property="og:url" content="https://halftonellc.com/california-interior" />
-      {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>
           <h1 className="text-4xl sm:text-5xl font-light leading-tight tracking-wide text-gray-900 mb-4">
@@ -76,14 +73,12 @@ const PortfolioPage6 = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
       <section className="container mx-auto max-w-4xl px-4 sm:px-0 pb-16 space-y-12">
         {images.map((fileName, index) => (
           <ImagePlaceholder
             key={index}
             ratioClass="16x9"
             text={`KWU California - ${fileName}`}
-            // Note the use of encodeURIComponent to handle spaces in filenames for GitHub Pages
             src={`./${imageBase}/${encodeURIComponent(fileName)}`}
           />
         ))}

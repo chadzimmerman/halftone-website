@@ -29,6 +29,17 @@
     <!-- Additional -->
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Halftone LLC" />
+
+    <script>
+      // Pick up redirect stored by 404.html so React Router gets the right path
+      (function () {
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

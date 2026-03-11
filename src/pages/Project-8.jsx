@@ -18,11 +18,9 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 const PortfolioPage8 = () => {
-  // Folder path for Portland Residence
   const imageBase =
     "assets/Halftone-2026/Neo_contemporary_residence_in_Portland";
 
-  // List of specific filenames including those with spaces and "copy"
   const images = [
     "bird_view_1_1 copy.jpg",
     "bird_view_3_copy.jpg",
@@ -42,7 +40,6 @@ const PortfolioPage8 = () => {
       <link rel="canonical" href="https://halftonellc.com/portland-residence" />
       <meta property="og:title" content="Portland Neo Contemporary Residence | Halftone LLC Archviz" />
       <meta property="og:url" content="https://halftonellc.com/portland-residence" />
-      {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>
           <h1 className="text-4xl sm:text-5xl font-light leading-tight tracking-wide text-gray-900 mb-4">
@@ -76,14 +73,13 @@ const PortfolioPage8 = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
       <section className="container mx-auto max-w-4xl px-4 sm:px-0 pb-16 space-y-12">
         {images.map((fileName, index) => (
           <ImagePlaceholder
             key={index}
             ratioClass="16x9"
             text={`Portland Residence - View ${index + 1}`}
-            // encodeURIComponent handles the spaces in "copy.jpg"
+            // encodeURIComponent needed for spaces in filenames
             src={`./${imageBase}/${encodeURIComponent(fileName)}`}
           />
         ))}

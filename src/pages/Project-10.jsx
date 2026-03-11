@@ -18,10 +18,8 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 const PortfolioPage10 = () => {
-  // Folder path for Office Building 2
   const imageBase = "assets/Halftone-2026/Office_Building_2/jpeg";
 
-  // Assuming a similar set of views (1 through 6), adjust the length if needed
   const views = Array.from({ length: 1 }, (_, i) => `view_${i + 1}`);
 
   return (
@@ -31,7 +29,6 @@ const PortfolioPage10 = () => {
       <link rel="canonical" href="https://halftonellc.com/office-2" />
       <meta property="og:title" content="Seattle Tech Hub Office Visualization | Halftone LLC Archviz" />
       <meta property="og:url" content="https://halftonellc.com/office-2" />
-      {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>
           <h1 className="text-4xl sm:text-5xl font-light leading-tight tracking-wide text-gray-900 mb-4">
@@ -69,7 +66,6 @@ const PortfolioPage10 = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
       <section className="container mx-auto max-w-4xl px-4 sm:px-0 pb-16 space-y-12">
         {views.map((viewName) => (
           <ImagePlaceholder

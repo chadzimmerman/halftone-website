@@ -18,10 +18,8 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 const PortfolioPage7 = () => {
-  // Folder path for Mariya Podryadova Villa
   const imageBase = "assets/Halftone-2026/Mariya_Podryadova_Villa";
 
-  // Array of specific Cyrillic filenames provided
   const images = [
     "Мария_Подрядова_Частная_вилла_Вид_1.jpg",
     "Мария_Подрядова_Частная_вилла_Вид_2.jpg",
@@ -40,7 +38,6 @@ const PortfolioPage7 = () => {
       <link rel="canonical" href="https://halftonellc.com/mariya-villa" />
       <meta property="og:title" content="Mariya Podryadova Private Villa Moscow | Halftone LLC Archviz" />
       <meta property="og:url" content="https://halftonellc.com/mariya-villa" />
-      {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>
           <h1 className="text-4xl sm:text-5xl font-light leading-tight tracking-wide text-gray-900 mb-4">
@@ -78,14 +75,13 @@ const PortfolioPage7 = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
       <section className="container mx-auto max-w-4xl px-4 sm:px-0 pb-16 space-y-12">
         {images.map((fileName, index) => (
           <ImagePlaceholder
             key={index}
             ratioClass="16x9"
             text={`Mariya Podryadova Villa - View ${index + 1}`}
-            // encodeURIComponent is critical here for the Russian characters
+            // encodeURIComponent needed for Cyrillic filenames
             src={`./${imageBase}/${encodeURIComponent(fileName)}`}
           />
         ))}

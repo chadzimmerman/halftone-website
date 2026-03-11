@@ -8,7 +8,6 @@ import {
   Mail,
 } from "lucide-react";
 
-// Helper component for image placeholders
 const ImagePlaceholder = ({ ratioClass, text, src }) => {
   const defaultSrc = `https://placehold.co/${ratioClass}/3d3d3d/cccccc?text=${text.replace(
     / /g,
@@ -27,13 +26,10 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
   );
 };
 
-// Main Application Component for "Contact"
 const Contact = () => {
-  // Styles for the specific khaki-like button color
   const khakiColor = "#a99878";
 
   return (
-    // REMOVED: <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
     <div className="bg-white text-gray-900">
       <title>Contact | Halftone LLC Architectural Visualization</title>
       <meta name="description" content="Get in touch with Halftone LLC to discuss your architectural visualization project. We provide 3D rendering and animation services for architects, developers, and designers worldwide." />
@@ -41,14 +37,9 @@ const Contact = () => {
       <meta property="og:title" content="Contact | Halftone LLC Architectural Visualization" />
       <meta property="og:url" content="https://halftonellc.com/contact" />
 
-      {/* NOTE: Navigation and Footer were removed and moved to Layout.jsx */}
-
-      {/* 1. Hero/Contact Card Section (The complex overlapping block) */}
       <section className="min-h-[500px] bg-gray-200">
         <div className="container mx-auto max-w-4xl relative pt-16 pb-16 px-4 sm:px-0">
-          {/* Container for the overlapping image and text card */}
           <div className="relative w-full h-full md:h-[400px]">
-            {/* Book Image (Top Left Offset) */}
             <div className="relative w-full h-[200px] md:w-[450px] md:h-[250px] md:absolute md:top-0 md:left-0 z-10 shadow-md">
               <ImagePlaceholder
                 ratioClass="700x500"
@@ -57,7 +48,6 @@ const Contact = () => {
               />
             </div>
 
-            {/* White Contact Card (Offset to the right and slightly below the image) */}
             <div className="relative mt-8 md:mt-0 md:ml-[35%] w-full md:w-[65%] bg-white shadow-xl md:absolute md:top-[15%] md:left-0 z-20">
               <div className="p-10 sm:p-12">
                 <h1 className="text-4xl font-light tracking-wide text-gray-900 mb-4">
@@ -74,10 +64,8 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* 2. Contact Details and Form Section (Directly below the main hero area, integrated with the gray background) */}
       <section className="bg-gray-200 py-16">
         <div className="container mx-auto max-w-4xl px-4 sm:px-0 grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Left Column: Contact Details (Aligned vertically with the form) */}
           <div className="md:pr-8">
             <h2 className="text-xl font-light tracking-wider text-gray-900 mb-6">
               Contact Details
@@ -90,16 +78,13 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right Column: Contact Form */}
           <div>
             <form
               className="space-y-4"
               action="https://formspree.io/f/meovqknq"
               method="POST"
             >
-              {/* Input fields as required by the image (small, thin border, uppercase labels) */}
               <div className="grid grid-cols-3 gap-3">
-                {/* Labels */}
                 <label
                   htmlFor="firstName"
                   className="block text-gray-700 text-xs uppercase tracking-wider"
@@ -119,7 +104,6 @@ const Contact = () => {
                   Email *
                 </label>
 
-                {/* Inputs */}
                 <input
                   id="firstName"
                   name="firstName"
@@ -154,7 +138,6 @@ const Contact = () => {
                 className="w-full p-3 border border-gray-300 bg-white text-gray-800 text-sm focus:outline-none focus:ring-1 focus:ring-gray-400"
               ></textarea>
 
-              {/* Submit Button with the specific khaki background */}
               <button
                 type="submit"
                 className="w-full py-4 text-white text-sm tracking-wider uppercase hover:opacity-90 transition duration-200"

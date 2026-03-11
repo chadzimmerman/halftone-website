@@ -18,10 +18,8 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 const PortfolioPage5 = () => {
-  // Folder path updated to match House_in_Pine_Woods directory
   const imageBase = "assets/Halftone-2026/House_in_Pine_Woods/Jpeg";
 
-  // List of specific image filenames provided
   const images = [
     "cam_9.jpg",
     "view_1.jpg",
@@ -40,7 +38,6 @@ const PortfolioPage5 = () => {
       <link rel="canonical" href="https://halftonellc.com/pine-woods" />
       <meta property="og:title" content="House in Pine Woods Toronto | Halftone LLC Archviz" />
       <meta property="og:url" content="https://halftonellc.com/pine-woods" />
-      {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>
           <h1 className="text-4xl sm:text-5xl font-light leading-tight tracking-wide text-gray-900 mb-4">
@@ -78,7 +75,6 @@ const PortfolioPage5 = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
       <section className="container mx-auto max-w-4xl px-4 sm:px-0 pb-16 space-y-12">
         {images.map((fileName, index) => (
           <ImagePlaceholder

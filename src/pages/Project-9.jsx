@@ -18,10 +18,8 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 const PortfolioPage9 = () => {
-  // Folder path for Office Building
   const imageBase = "assets/Halftone-2026/Office_Building/JPEG";
 
-  // Generates array ["VIEW_1", "VIEW_2", ..., "VIEW_8"]
   const views = Array.from({ length: 7 }, (_, i) => `VIEW_${i + 1}`);
 
   return (
@@ -31,7 +29,6 @@ const PortfolioPage9 = () => {
       <link rel="canonical" href="https://halftonellc.com/office-1" />
       <meta property="og:title" content="Moscow Business Center Commercial Visualization | Halftone LLC" />
       <meta property="og:url" content="https://halftonellc.com/office-1" />
-      {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>
           <h1 className="text-4xl sm:text-5xl font-light leading-tight tracking-wide text-gray-900 mb-4">
@@ -70,14 +67,12 @@ const PortfolioPage9 = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
       <section className="container mx-auto max-w-4xl px-4 sm:px-0 pb-16 space-y-12">
         {views.map((viewName) => (
           <ImagePlaceholder
             key={viewName}
             ratioClass="16x9"
             text={`Office Building Moscow - ${viewName}`}
-            // Using the ./ fix for GitHub Pages
             src={`./${imageBase}/${viewName}.jpg`}
           />
         ))}

@@ -9,7 +9,6 @@ import {
   MapPin,
 } from "lucide-react";
 
-// Helper component for image placeholders
 const ImagePlaceholder = ({ ratioClass, text, src }) => {
   const defaultSrc = `https://placehold.co/${ratioClass}/555555/dddddd?text=${text.replace(
     / /g,
@@ -28,7 +27,6 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
   );
 };
 
-// Component for the Halftone Founder Images
 const HalftoneFounder = ({
   name,
   title,
@@ -38,7 +36,6 @@ const HalftoneFounder = ({
   imageSrc,
 }) => (
   <div className="flex flex-col items-start space-y-4 p-4">
-    {/* Image container: using a mock B&W halftone effect */}
     <div className="w-full h-auto bg-gray-900 border-2 border-gray-900 overflow-hidden">
       <ImagePlaceholder
         ratioClass={imageRatio}
@@ -61,9 +58,7 @@ const HalftoneFounder = ({
   </div>
 );
 
-// Main Application Component for "About Us"
 const About = () => {
-  // Mock data for founders
   const founders = [
     {
       name: "Lana",
@@ -99,9 +94,7 @@ const About = () => {
       <meta property="og:title" content="About Us | Halftone LLC Architectural Visualization Studio" />
       <meta property="og:url" content="https://halftonellc.com/about" />
 
-      {/* 1. Bio Header Section */}
       <section className="container mx-auto max-w-6xl px-6 py-20 flex flex-col items-center sm:items-start sm:flex-row space-y-8 sm:space-y-0 sm:space-x-16">
-        {/* Left Column (Text) */}
         <div className="flex-1 max-w-md">
           <h1 className="text-6xl font-black tracking-tighter mb-8">BIO</h1>
           <div className="grid grid-cols-2 gap-4 text-sm text-gray-700">
@@ -127,7 +120,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Right Column (Circular Image) */}
         <div className="w-64 h-64 sm:w-80 sm:h-80 flex-shrink-0">
           <div className="w-full h-full rounded-full overflow-hidden border-2 border-gray-100 shadow-xl">
             <ImagePlaceholder
@@ -139,17 +131,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* 2. About Us Narrative Section */}
       <section className="bg-gray-100 py-20">
         <div className="container mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Left Column: Title */}
           <div className="md:pr-16">
             <h2 className="text-5xl font-black tracking-tighter text-gray-900 border-b-2 border-gray-900 inline-block pb-1">
               About Us
             </h2>
           </div>
 
-          {/* Right Column: Text Content */}
           <div className="space-y-10">
             <div className="space-y-4">
               <h3 className="text-xl font-black tracking-wide text-gray-900">
@@ -232,7 +221,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* 3. Meet Our Founders Section */}
       <section className="container mx-auto max-w-6xl px-6 py-20">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-light tracking-widest text-gray-900 mb-2 uppercase">
@@ -241,9 +229,7 @@ const About = () => {
           <p className="text-sm text-gray-500">OUR TEAM</p>
         </div>
 
-        {/* Rest In Peace, Knyaz Myshkin */}
-
-        {/* Founders Grid (Updated for 3 members) */}
+        {/* RIP Knyaz Myshkin */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4 mx-auto max-w-5xl">
           {founders.map((founder, index) => (
             <HalftoneFounder

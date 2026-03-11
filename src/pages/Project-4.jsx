@@ -18,10 +18,8 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 const PortfolioPage4 = () => {
-  // Folder path updated to match your Greece Villa directory
   const imageBase = "assets/Halftone-2026/Greece_Villa/jpeg";
 
-  // Array to automatically generate the 7 view images
   const views = [
     "view_1",
     "view_2",
@@ -39,7 +37,6 @@ const PortfolioPage4 = () => {
       <link rel="canonical" href="https://halftonellc.com/greek-villa" />
       <meta property="og:title" content="Greece Villa Mediterranean Exterior | Halftone LLC Archviz" />
       <meta property="og:url" content="https://halftonellc.com/greek-villa" />
-      {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>
           <h1 className="text-4xl sm:text-5xl font-light leading-tight tracking-wide text-gray-900 mb-4">
@@ -78,7 +75,6 @@ const PortfolioPage4 = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
       <section className="container mx-auto max-w-4xl px-4 sm:px-0 pb-16 space-y-12">
         {views.map((viewName) => (
           <ImagePlaceholder

@@ -9,7 +9,6 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
         loading="lazy"
         className="w-full h-auto object-cover"
         style={{ aspectRatio: ratioClass.replace("x", "/") }}
-        // Fallback to placeholder if image is missing
         onError={(e) => {
           e.target.src = `https://placehold.co/${ratioClass}/cccccc/3d3d3d?text=Image+Not+Found`;
         }}
@@ -19,7 +18,6 @@ const ImagePlaceholder = ({ ratioClass, text, src }) => {
 };
 
 const PortfolioPage1 = () => {
-  // 1. The path starts from /assets/ because 'public' is the root
   const imageBase =
     "assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_1";
 
@@ -30,16 +28,13 @@ const PortfolioPage1 = () => {
       <link rel="canonical" href="https://halftonellc.com/texas-neighborhood-1" />
       <meta property="og:title" content="Residential Neighborhood Houston TX | Halftone LLC Archviz" />
       <meta property="og:url" content="https://halftonellc.com/texas-neighborhood-1" />
-      {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16">
         <h1 className="text-4xl font-light mb-4">Residential Neighborhood</h1>
         <p className="text-sm text-gray-600">Location: Houston, TX</p>
         <p className="leading-relaxed mt-4">Visualization project for AMA.</p>
       </section>
 
-      {/* Image Gallery */}
       <section className="container mx-auto max-w-4xl px-4 pb-16 space-y-12">
-        {/* 2. Use the short path + the filename. No special encoding needed locally */}
         <ImagePlaceholder
           ratioClass="16x9"
           text="Exterior View 1"
