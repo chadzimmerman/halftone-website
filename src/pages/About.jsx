@@ -93,6 +93,12 @@ const About = () => {
 
   return (
     <div className="bg-white text-gray-900">
+      <title>About Us | Halftone LLC Architectural Visualization Studio</title>
+      <meta name="description" content="Meet the Halftone LLC team — professional architects, designers, and CG artists based in Denver, Moscow, and Fukuoka. Learn about our background and approach to architectural visualization." />
+      <link rel="canonical" href="https://halftonellc.com/about" />
+      <meta property="og:title" content="About Us | Halftone LLC Architectural Visualization Studio" />
+      <meta property="og:url" content="https://halftonellc.com/about" />
+
       {/* 1. Bio Header Section */}
       <section className="container mx-auto max-w-6xl px-6 py-20 flex flex-col items-center sm:items-start sm:flex-row space-y-8 sm:space-y-0 sm:space-x-16">
         {/* Left Column (Text) */}

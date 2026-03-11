@@ -24,6 +24,11 @@ const PortfolioPage2 = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>Residential Neighborhood Lilburn GA | Halftone LLC Archviz</title>
+      <meta name="description" content="Photorealistic exterior 3D renders of a residential neighborhood in Lilburn, Georgia. Architectural visualization by Halftone LLC for AMA." />
+      <link rel="canonical" href="https://halftonellc.com/texas-neighborhood-2" />
+      <meta property="og:title" content="Residential Neighborhood Lilburn GA | Halftone LLC Archviz" />
+      <meta property="og:url" content="https://halftonellc.com/texas-neighborhood-2" />
       {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>

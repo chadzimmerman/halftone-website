@@ -34,6 +34,11 @@ const PortfolioPage4 = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>Greece Villa Mediterranean Exterior | Halftone LLC Archviz</title>
+      <meta name="description" content="Photorealistic exterior 3D renders of a Mediterranean villa with rounded balconies in Thessaloniki, Greece. Architectural visualization by Halftone LLC for Studio-TA." />
+      <link rel="canonical" href="https://halftonellc.com/greek-villa" />
+      <meta property="og:title" content="Greece Villa Mediterranean Exterior | Halftone LLC Archviz" />
+      <meta property="og:url" content="https://halftonellc.com/greek-villa" />
       {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>

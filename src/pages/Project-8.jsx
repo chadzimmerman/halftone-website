@@ -37,6 +37,11 @@ const PortfolioPage8 = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>Portland Neo Contemporary Residence | Halftone LLC Archviz</title>
+      <meta name="description" content="Photorealistic exterior 3D renders of a neo contemporary residence in Portland, Oregon. Architectural visualization by Halftone LLC for a private client." />
+      <link rel="canonical" href="https://halftonellc.com/portland-residence" />
+      <meta property="og:title" content="Portland Neo Contemporary Residence | Halftone LLC Archviz" />
+      <meta property="og:url" content="https://halftonellc.com/portland-residence" />
       {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>

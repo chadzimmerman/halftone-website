@@ -76,67 +76,67 @@ const Home = () => {
   const projectImages = [
     {
       src: "assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_1/exterior_view_1_Texas.jpg",
-      text: "Residential Neighborhood Texas",
+      text: "Exterior 3D render of a residential neighborhood in Houston, Texas — Halftone LLC archviz",
       span: "col-span-1",
       link: "/texas-neighborhood-1",
     },
     {
       src: "assets/Halftone-2026/Ali_Abaan_Residential_Neighborhood_Texas_2/Final_Render_Texas.jpg",
-      text: "Texas Final Render",
+      text: "Photorealistic exterior render of a residential neighborhood in Lilburn, Georgia — Halftone LLC",
       span: "col-span-1",
       link: "/texas-neighborhood-2",
     },
     {
       src: "assets/Halftone-2026/DARUL_HUDA_MASJID_mosque/DARUL_HUDA_MASJID.jpg",
-      text: "Darul Huda Masjid",
+      text: "Exterior 3D render of Darul Huda Masjid mosque in Georgia — Halftone LLC architectural visualization",
       span: "col-span-2 md:col-span-1",
       link: "/darul-huda-masjid-mosque",
     },
     {
       src: "assets/Halftone-2026/Greece_Villa/jpeg/view_5.jpg",
-      text: "Greece Villa",
+      text: "Photorealistic render of a Mediterranean villa with rounded balconies in Thessaloniki, Greece — Halftone LLC",
       span: "col-span-2 md:col-span-1",
       link: "/greek-villa",
     },
     {
       src: "assets/Halftone-2026/House_in_Pine_Woods/Jpeg/view_2.jpg",
-      text: "House in Pine Woods",
+      text: "Exterior 3D render of a residential house in pine woods near Toronto, Canada — Halftone LLC archviz",
       span: "col-span-1",
       link: "/pine-woods",
     },
     {
       src: "assets/Halftone-2026/KWU_California/KWU_CALIFORNIA_RENDER_2_Day_Interior.jpg",
-      text: "KWU California Interior",
+      text: "Day interior 3D render of Cipriano ADU in California — Halftone LLC architectural visualization",
       span: "col-span-1",
       link: "/california-interior",
     },
     {
       src: "assets/Halftone-2026/Mariya_Podryadova_Villa/Мария_Подрядова_Частная_вилла_Вид_7_светлее.jpg",
-      text: "Mariya Podryadova Villa",
+      text: "Photorealistic exterior render of Mariya Podryadova private villa in Moscow, Russia — Halftone LLC",
       span: "col-span-1",
       link: "/mariya-villa",
     },
     {
       src: "assets/Halftone-2026/Neo_contemporary_residence_in_Portland/camera_2_11_copy.jpg",
-      text: "Portland Residence",
+      text: "Exterior 3D render of a neo contemporary residence in Portland, Oregon — Halftone LLC archviz",
       span: "col-span-1",
       link: "/portland-residence",
     },
     {
       src: "assets/Halftone-2026/Office_Building/JPEG/VIEW_7.jpg",
-      text: "Office Building 1",
+      text: "Exterior 3D render of a contemporary office building (business center) in Moscow, Russia — Halftone LLC",
       span: "col-span-1",
       link: "/office-1",
     },
     {
       src: "assets/Halftone-2026/Office_Building_2/jpeg/view_1.jpg",
-      text: "Office Building 2",
+      text: "Commercial exterior 3D render of a boutique office building in Seattle, Washington — Halftone LLC",
       span: "col-span-1",
       link: "/office-2",
     },
     {
       src: "assets/Halftone-2026/Scandinavian_house/VIEW_2.jpg",
-      text: "Scandinavian House",
+      text: "Photorealistic 3D render of a minimalist Scandinavian residential retreat in Finland — Halftone LLC",
       span: "col-span-2",
       link: "/scandinavian-house",
     },
@@ -155,6 +155,12 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>Halftone LLC | Architectural Visualization & 3D Rendering Studio</title>
+      <meta name="description" content="Halftone LLC is a professional architectural visualization studio offering photorealistic 3D renders, interior and exterior visualization, and animations for residential and commercial projects worldwide." />
+      <link rel="canonical" href="https://halftonellc.com/" />
+      <meta property="og:title" content="Halftone LLC | Architectural Visualization & 3D Rendering Studio" />
+      <meta property="og:url" content="https://halftonellc.com/" />
+
       {/* 1. Hero Section (Simulated with background image and overlay) */}
       <header className="relative h-[80vh] flex flex-col items-center justify-start pt-12 overflow-hidden">
         {/* Background image simulation */}
@@ -162,7 +168,7 @@ const Home = () => {
           <img
             //https://placehold.co/1200x800/222222/eeeeee?text=Forest+Architecture+Hero
             src="assets/Halftone-2026/House_in_Pine_Woods/Jpeg/view_1.jpg"
-            alt="Hero Background"
+            alt="Photorealistic 3D render of a house in pine woods — Halftone LLC architectural visualization"
             className="w-full h-full object-cover"
           />
         </div>

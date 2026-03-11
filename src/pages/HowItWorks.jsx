@@ -393,6 +393,12 @@ const processSteps = [
 const HowItWorks = () => {
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>How It Works | Halftone LLC Architectural Visualization Process</title>
+      <meta name="description" content="Learn how Halftone LLC delivers photorealistic architectural renders in three steps: consultation, working process, and final delivery. Starting at $299 per render." />
+      <link rel="canonical" href="https://halftonellc.com/how-it-works" />
+      <meta property="og:title" content="How It Works | Halftone LLC Architectural Visualization Process" />
+      <meta property="og:url" content="https://halftonellc.com/how-it-works" />
+
       {/* Main Page Title */}
       <section className="container mx-auto max-w-4xl px-6 py-16 text-center">
         <h1 className="text-4xl font-light tracking-wide text-gray-900 mb-4">

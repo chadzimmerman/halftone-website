@@ -35,6 +35,11 @@ const PortfolioPage7 = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>Mariya Podryadova Private Villa Moscow | Halftone LLC Archviz</title>
+      <meta name="description" content="Photorealistic exterior 3D renders of a private villa in Moscow, Russia for architectural bureau Maria Podryadova. Visualization by Halftone LLC." />
+      <link rel="canonical" href="https://halftonellc.com/mariya-villa" />
+      <meta property="og:title" content="Mariya Podryadova Private Villa Moscow | Halftone LLC Archviz" />
+      <meta property="og:url" content="https://halftonellc.com/mariya-villa" />
       {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>

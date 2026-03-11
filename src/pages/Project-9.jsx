@@ -26,6 +26,11 @@ const PortfolioPage9 = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>Moscow Business Center Commercial Visualization | Halftone LLC</title>
+      <meta name="description" content="Photorealistic exterior 3D renders of a contemporary office complex (business center) in Moscow, Russia. Commercial architectural visualization by Halftone LLC for Studio-TA." />
+      <link rel="canonical" href="https://halftonellc.com/office-1" />
+      <meta property="og:title" content="Moscow Business Center Commercial Visualization | Halftone LLC" />
+      <meta property="og:url" content="https://halftonellc.com/office-1" />
       {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>

@@ -23,6 +23,11 @@ const PortfolioPage3 = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>Darul Huda Masjid Mosque Visualization | Halftone LLC Archviz</title>
+      <meta name="description" content="Photorealistic exterior 3D renders of the Darul Huda Masjid mosque in Georgia. Religious architecture visualization by Halftone LLC for AMA / Abaan Ali." />
+      <link rel="canonical" href="https://halftonellc.com/darul-huda-masjid-mosque" />
+      <meta property="og:title" content="Darul Huda Masjid Mosque Visualization | Halftone LLC Archviz" />
+      <meta property="og:url" content="https://halftonellc.com/darul-huda-masjid-mosque" />
       {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>

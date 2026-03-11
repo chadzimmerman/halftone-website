@@ -32,6 +32,11 @@ const PortfolioPage6 = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>Cipriano ADU California Interior & Exterior | Halftone LLC Archviz</title>
+      <meta name="description" content="Day, night, and evening 3D renders of the Cipriano ADU (Accessory Dwelling Unit) in California. Interior and exterior visualization by Halftone LLC for KWU Studio." />
+      <link rel="canonical" href="https://halftonellc.com/california-interior" />
+      <meta property="og:title" content="Cipriano ADU California Interior & Exterior | Halftone LLC Archviz" />
+      <meta property="og:url" content="https://halftonellc.com/california-interior" />
       {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>

@@ -35,6 +35,11 @@ const PortfolioPage5 = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>House in Pine Woods Toronto | Halftone LLC Archviz</title>
+      <meta name="description" content="Photorealistic exterior 3D renders of a residential home in the pine woods near Toronto, Canada. Architectural visualization by Halftone LLC for Studio-TA." />
+      <link rel="canonical" href="https://halftonellc.com/pine-woods" />
+      <meta property="og:title" content="House in Pine Woods Toronto | Halftone LLC Archviz" />
+      <meta property="og:url" content="https://halftonellc.com/pine-woods" />
       {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16 sm:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>

@@ -35,6 +35,12 @@ const Contact = () => {
   return (
     // REMOVED: <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
     <div className="bg-white text-gray-900">
+      <title>Contact | Halftone LLC Architectural Visualization</title>
+      <meta name="description" content="Get in touch with Halftone LLC to discuss your architectural visualization project. We provide 3D rendering and animation services for architects, developers, and designers worldwide." />
+      <link rel="canonical" href="https://halftonellc.com/contact" />
+      <meta property="og:title" content="Contact | Halftone LLC Architectural Visualization" />
+      <meta property="og:url" content="https://halftonellc.com/contact" />
+
       {/* NOTE: Navigation and Footer were removed and moved to Layout.jsx */}
 
       {/* 1. Hero/Contact Card Section (The complex overlapping block) */}

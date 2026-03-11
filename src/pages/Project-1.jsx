@@ -25,6 +25,11 @@ const PortfolioPage1 = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <title>Residential Neighborhood Houston TX | Halftone LLC Archviz</title>
+      <meta name="description" content="Photorealistic exterior and interior 3D renders of a residential neighborhood in Houston, Texas. Architectural visualization by Halftone LLC for AMA." />
+      <link rel="canonical" href="https://halftonellc.com/texas-neighborhood-1" />
+      <meta property="og:title" content="Residential Neighborhood Houston TX | Halftone LLC Archviz" />
+      <meta property="og:url" content="https://halftonellc.com/texas-neighborhood-1" />
       {/* Hero Section */}
       <section className="container mx-auto max-w-4xl px-6 py-16">
         <h1 className="text-4xl font-light mb-4">Residential Neighborhood</h1>

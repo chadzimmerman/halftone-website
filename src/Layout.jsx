@@ -5,11 +5,37 @@ import { Link } from "react-router-dom";
 // import Navigation from './Navigation';
 // import Footer from './Footer';
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Halftone LLC",
+  "description": "Professional architectural visualization studio offering photorealistic 3D renders, interior and exterior visualization, and animations for residential and commercial projects.",
+  "url": "https://halftonellc.com",
+  "email": "halftonellc@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "32 N Gould Street",
+    "addressLocality": "Sheridan",
+    "addressRegion": "WY",
+    "postalCode": "82801",
+    "addressCountry": "US"
+  },
+  "sameAs": [],
+  "serviceType": [
+    "Architectural Visualization",
+    "3D Rendering",
+    "Interior Visualization",
+    "Exterior Rendering",
+    "Architectural Animation"
+  ]
+};
+
 // This is the component that should wrap your Home, About, and Contact pages
 const Layout = ({ children }) => {
   return (
     // Outer container: Sets the global font, minimum height, and text color
     <div className="min-h-screen bg-white font-['Inter'] text-gray-900 antialiased">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* 1. Navigation (Full Width) */}
       {/* You would place your Navigation component here */}
       <header className="w-full min-h-16 border-b border-gray-100 flex flex-col sm:flex-row items-center justify-between px-6 py-4 sm:py-0">
